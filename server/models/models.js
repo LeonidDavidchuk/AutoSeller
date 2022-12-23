@@ -41,10 +41,10 @@ const Brand = sequelize.define('brand', {
     name: {type: DataTypes.STRING, unique: true}
 })
 
-Car.hasOne(Type)
+Car.hasMany(Type)
 Type.belongsTo(Car)
 
-Car.hasOne(Brand)
+Car.hasMany(Brand)
 Brand.belongsTo(Car)
 
 module.exports = {
