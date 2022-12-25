@@ -8,3 +8,18 @@
     text-align: center;
     font-size: 200%;
 }
+.dfl {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.carousel {
+    width: 700px;
+    margin-top: 20px;
+}
+.k {
+    margin-left: 60%;
+    margin-top: -25%;
+    font-weight: bold;
+}
