@@ -1,10 +1,19 @@
 import React from 'react';
+import {Container, Row, Col} from "react-bootstrap"
 
 const Main = () => {
     return (
-      <div>
-        MAIN
-      </div>
+      <Container>
+        <Row>
+          <Col md={3}>
+
+          </Col>
+
+          <Col md={9}>
+
+          </Col>
+        </Row>
+      </Container>
   
     );
   };
