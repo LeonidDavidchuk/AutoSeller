@@ -1,16 +1,13 @@
 import React from 'react';
-import {Container, Row, Col} from "react-bootstrap"
+import {Container, Col, Row} from "react-bootstrap"
+import CarList from '../components/CarList';
 
 const Main = () => {
     return (
       <Container>
         <Row>
-          <Col md={3}>
-
-          </Col>
-
           <Col md={9}>
-
+          <CarList />
           </Col>
         </Row>
       </Container>

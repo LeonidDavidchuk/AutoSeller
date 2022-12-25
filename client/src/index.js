@@ -1,6 +1,7 @@
 import React, {createContext} from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import CarStore from './store/carStore';
 import UserStore from './store/userStore';
 
 export const Context = createContext(null)
@@ -8,7 +9,8 @@ export const Context = createContext(null)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Context.Provider value={{
-    user: new UserStore()
+    user: new UserStore(),
+    car: new CarStore(),
   }}>
     <App />
   </Context.Provider>,
